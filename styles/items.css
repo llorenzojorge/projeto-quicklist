@@ -1,0 +1,19 @@
+#items-list {
+  display: grid;
+  gap: .75rem;
+
+  & li {
+    padding: .5rem .75rem;
+
+    & label {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: .75rem;
+
+      & span {
+        color: var(--content-secondary);
+      }
+    }
+  }
+}
