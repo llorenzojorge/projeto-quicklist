@@ -1,15 +1,28 @@
 button {
-  padding: .75rem 1.5rem;
+  font: var(--label);
+  color: var(--always-white);
   border: none;
-  border-radius: .75rem;
   cursor: pointer;
+  background: none;
 }
 
-button:hover {
-  background-color: var(--color-brand-hover);
+#add-item-form { 
+  & button {
+    background-color: var(--color-brand);
+    padding: .75rem 1.5rem;
+    border-radius: .75rem;
+
+    &:hover {
+      background-color: var(--color-brand-hover);
+    }
+  }
 }
 
 a {
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
 }
