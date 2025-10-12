@@ -26,5 +26,26 @@
 }
 
 html {
+  font: var(--paragraph);
   font-family: var(--font-family);
+}
+
+h1 {
+  font: var(--title);
+  color: var(--content-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: var(--label);
+  color: var(--always-white);
+  background-color: var(--color-brand);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

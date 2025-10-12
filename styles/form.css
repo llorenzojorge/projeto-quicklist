@@ -1,0 +1,27 @@
+#add-item-form {
+  display: grid;
+  gap: 1rem;
+
+  & #new-item {
+    font: 400 1rem/140% var(--font-family);
+    padding: .68rem 1.1rem;
+    border: 2px solid var(--border-primary);
+    border-radius: .75rem;
+
+    cursor: pointer;
+    outline: none;
+    
+    &::placeholder {color: var(--content-tertiary);}
+    &:hover {border-color: var(--border-hover);}
+    &:focus {
+      color: var(--content-primary);
+      border-color: var(--color-brand);
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #add-item-form {
+    grid-template-columns: 1fr auto;
+  }
+}

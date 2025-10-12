@@ -8,31 +8,29 @@
 
   <title>Quicklist - Lista de compras</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
-  <div class="desktop-only">
+  <header class="desktop-only">
     <img src="assets/logo.svg" alt="">
-  </div>
+  </header>
 
   <main>
-    <a href="#">
-      <img src="" alt="">
-      Voltar
-    </a>
-    <h1>Compras da semana</h1>
+    <header>
+      <a href="#">
+        <img src="assets/icons/link-button.svg" alt="">
+      </a>
+      <h1>Compras da semana</h1>
+    </header>
 
-    <form>
-      <input type="text" name="add-item" id="add-item">
-      <button type="submit">Adicionar item</button>
+    <section>
+      <form id="add-item-form">
+        <input id="new-item" type="text" name="new-item" placeholder="Adicione um novo item">
+        <button type="submit">Adicionar item</button>
+      </form>
 
-      <div class="checkbox-radio">
-        <img src="" alt="">
-        <input type="checkbox" name="item-1" id="item-1">
-        <img src="" alt="">
-      </div>
-    </form>
+    </section>
   </main>
 
   <script src="script.js"></script>
