@@ -35,11 +35,50 @@
       & .delete-item {
         width: 2rem;
         height: 2rem;
-        background: url(../assets/icons/delete.svg) no-repeat center/cover;
+        background: url(../assets/icons/trash.svg) no-repeat center/cover;
         transition: all 0.2s ease;
 
-        &:hover {background: url(../assets/icons/delete-hover.svg) no-repeat center/cover;}
+        &:hover {background: url(../assets/icons/trash-hover.svg) no-repeat center/cover;}
       }
     }
+  }
+}
+
+#delete-confirm {
+  opacity: 0;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: auto 1fr auto;
+
+  margin-top: 2.25rem;
+  padding: .75rem;
+  border-radius: .75rem;
+  background-color: var(--color-danger);
+
+  animation: delete-msg 1s ease both;
+
+  & span {
+    font: var(--label);
+    color: var(--always-white);
+  }
+
+  & #delete-msg {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url(../assets/icons/delete-msg.svg);
+  }
+}
+
+@keyframes delete-msg {
+  0% {
+    transform: translateY(20px);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
   }
 }
