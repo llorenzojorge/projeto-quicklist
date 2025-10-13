@@ -2,7 +2,7 @@
   display: grid;
   gap: 1rem;
 
-  & #new-item {
+  & #add-item {
     font: 400 1rem/140% var(--font-family);
     padding: .68rem 1.1rem;
     border: 2px solid var(--border-primary);
