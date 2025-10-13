@@ -46,7 +46,7 @@
 
 #delete-confirm {
   opacity: 0;
-  display: grid;
+  display: none;
   gap: .5rem;
   grid-template-columns: auto 1fr auto;
 
