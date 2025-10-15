@@ -3,6 +3,7 @@ const form = document.getElementById("add-item-form")
 const itemsList = document.getElementById("items-list")
 const itemDefault = itemsList.querySelector("li")
 const addItem = document.getElementById("add-item")
+const deleteConfirm = document.getElementById("delete-confirm")
 
 form.onsubmit = (event) => {
   event.preventDefault()
@@ -29,5 +30,16 @@ itemsList.addEventListener("click", (event) => {
     const li = event.target.closest("li")
     // Excluindo o <li> do html.
     li.remove()
+    showMessageDelete()
   }
 })
+
+deleteConfirm.addEventListener("click", (event) => {
+  if(event.target.classList.contains("close-msg")) {
+    deleteConfirm.classList.add("hidden")
+  }
+})
+
+function showMessageDelete() {
+  return deleteConfirm.classList.remove("hidden")
+}

@@ -46,7 +46,7 @@
 
 #delete-confirm {
   opacity: 0;
-  display: none;
+  display: grid;
   gap: .5rem;
   grid-template-columns: auto 1fr auto;
 
@@ -62,11 +62,15 @@
     color: var(--always-white);
   }
 
-  & #close-msg {
+  & .close-msg {
     width: 1.25rem;
     height: 1.25rem;
-    background: url(../assets/icons/close-msg.svg);
+    background: url(../assets/icons/delete-msg.svg);
   }
+}
+
+#delete-confirm.hidden {
+  display: none;
 }
 
 @keyframes close-msg {
