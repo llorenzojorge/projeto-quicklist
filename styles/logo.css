@@ -2,6 +2,7 @@
   display: none;
   text-align: center;
   padding-block: 1.5rem 1.75rem;
+  margin-top: 4rem;
 }
 
 @media (width >= 80em) {

@@ -1,6 +1,7 @@
 main {
   max-width: 20.4rem;
   margin-inline: auto;
+  margin-top: 4rem;
 }
 
 main header {
@@ -10,5 +11,6 @@ main header {
 @media (width >= 80em) {
   main {
     max-width: 39.2rem;
+    margin-top: 0;
   }
 }
